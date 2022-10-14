@@ -1,0 +1,18 @@
+
+[
+    {
+        "name": "Reader",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Rutgers_Scarlet_Knights_logo.svg/800px-Rutgers_Scarlet_Knights_logo.svg.png",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+        "name": "Cang Jie",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/53/Cangjie2.jpg",
+        "description": "Цан Цзе (кит. трад. 倉頡, упр. 仓颉, пиньинь Cāng Jié, палл. Цан Цзе) — придворный историограф мифического императора Хуан Ди, считается создателем китайской письменности — набора пиктограмм, ставших основой для дальнейшего возникновения иероглифов, что послужило причиной отказа от узелкового письма."
+    },
+    {
+        "name": "Test Application",
+        "image": "https://thumbs.dreamstime.com/z/english-letter-t-sparklers-alphabet-black-background-big-made-burning-sparkles-shiny-festive-party-firework-font-latin-81014589.jpg",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    }
+]

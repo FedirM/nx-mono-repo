@@ -14,7 +14,14 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@mova/api": ["libs/api/src/index.ts"],
+      "@mova/component/card": ["libs/component/card/src/index.ts"],
+      "@mova/component/card-list": ["libs/component/card-list/src/index.ts"],
+      "@mova/mova-page-item-interface": [
+        "libs/mova-page-item-interface/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

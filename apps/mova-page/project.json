@@ -1,0 +1,72 @@
+{
+  "name": "mova-page",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/mova-page/src",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nrwl/webpack:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/apps/mova-page",
+        "compiler": "babel",
+        "main": "apps/mova-page/src/main.ts",
+        "tsConfig": "apps/mova-page/tsconfig.app.json",
+        "assets": [
+          "apps/mova-page/src/favicon.ico",
+          "apps/mova-page/src/assets"
+        ],
+        "index": "apps/mova-page/src/index.html",
+        "baseHref": "/",
+        "polyfills": "apps/mova-page/src/polyfills.ts",
+        "styles": ["apps/mova-page/src/styles.scss"],
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false,
+          "fileReplacements": [
+            {
+              "replace": "apps/mova-page/src/environments/environment.ts",
+              "with": "apps/mova-page/src/environments/environment.prod.ts"
+            }
+          ]
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/webpack:dev-server",
+      "options": {
+        "buildTarget": "mova-page:build",
+        "proxyConfig": "apps/mova-page/proxy.conf.json"
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "mova-page:build:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/mova-page/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/mova-page"],
+      "options": {
+        "jestConfig": "apps/mova-page/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  }
+}
