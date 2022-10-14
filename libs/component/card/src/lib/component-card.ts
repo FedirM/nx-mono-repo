@@ -25,7 +25,7 @@
 // customElements.define('ui-card', DemoTitleColoredElement);
 
 
-import { MovaPageItem  } from "libs/mova-page-item-interface/src";
+import { MovaPageItem  } from "@mova/mova-page-item-interface";
 
 const template = document.createElement('template');
 template.innerHTML = `
